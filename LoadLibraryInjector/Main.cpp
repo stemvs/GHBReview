@@ -19,6 +19,7 @@ DWORD GetProcessID(const wchar_t* procName) {
 			} while (Process32Next(snapshot, &pe32));
 		}
 	}
+	CloseHandle(snapshot);
 	return procId;
 }
 
