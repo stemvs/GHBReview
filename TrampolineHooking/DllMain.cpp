@@ -4,8 +4,9 @@
 
 typedef int (*SDL_GL_SwapBuffers)();
 
-SDL_GL_SwapBuffers gateway;
+static SDL_GL_SwapBuffers gateway;
 
+// int because return type error when using SDL_GL_SwapBuffers
 int hook() {
 	std::cout << "hooked\n";
 	return gateway();
@@ -27,9 +28,9 @@ DWORD WINAPI MainThread(HMODULE hModule) {
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved) {
 	switch (dwReason) {
 	case DLL_PROCESS_ATTACH:
-		HANDLE hThread;
+		HANDLE hThread = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)MainThread, hModule, 0, nullptr);
 
-		if (hThread = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)MainThread, hModule, 0, nullptr)) {
+		if (hThread) {
 			CloseHandle(hThread);
 		}
 		return TRUE;
