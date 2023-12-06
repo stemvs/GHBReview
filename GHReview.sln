@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Internal", "Internal\Intern
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoadLibraryInjector", "LoadLibraryInjector\LoadLibraryInjector.vcxproj", "{2BCA5A32-0C9E-45DF-9E71-451246DE2E9A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DetourHook", "DetourHook\DetourHook.vcxproj", "{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{2BCA5A32-0C9E-45DF-9E71-451246DE2E9A}.Release|x64.Build.0 = Release|x64
 		{2BCA5A32-0C9E-45DF-9E71-451246DE2E9A}.Release|x86.ActiveCfg = Release|Win32
 		{2BCA5A32-0C9E-45DF-9E71-451246DE2E9A}.Release|x86.Build.0 = Release|Win32
+		{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}.Debug|x64.ActiveCfg = Debug|x64
+		{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}.Debug|x64.Build.0 = Debug|x64
+		{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}.Debug|x86.ActiveCfg = Debug|Win32
+		{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}.Debug|x86.Build.0 = Debug|Win32
+		{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}.Release|x64.ActiveCfg = Release|x64
+		{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}.Release|x64.Build.0 = Release|x64
+		{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}.Release|x86.ActiveCfg = Release|Win32
+		{6FF681C1-F5A2-4D4F-AC4A-BB9F0E8DD0BA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
