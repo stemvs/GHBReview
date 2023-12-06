@@ -45,6 +45,6 @@ int main() {
 	
 	if (procId) {
 		HANDLE hProc = OpenProcess(PROCESS_ALL_ACCESS, FALSE, procId);
-		InjectDll(hProc, L"C:\\Dev\\GHReview\\Debug\\DetourHook.dll");
+		InjectDll(hProc, L"C:\\Dev\\GHReview\\Release\\TrampolineHooking.dll");
 	}
 }
