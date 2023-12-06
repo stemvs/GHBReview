@@ -7,7 +7,7 @@ void __declspec(naked) checkBot() {
 	__asm {
 		push eax // save registers
 		push ecx
-		mov eax,0x50f4f4 // local player pointer
+		mov eax,0x50F4F4 // local player pointer
 		mov eax,[eax]
 		mov eax,[eax]
 		mov ecx,[ebx-0xF4]
