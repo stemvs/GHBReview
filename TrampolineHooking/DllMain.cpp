@@ -6,7 +6,6 @@ typedef int (*SDL_GL_SwapBuffers)();
 
 static SDL_GL_SwapBuffers gateway;
 
-// int because return type error when using SDL_GL_SwapBuffers
 int hook() {
 	std::cout << "hooked\n";
 	return gateway();
